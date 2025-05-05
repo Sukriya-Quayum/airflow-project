@@ -1,0 +1,13 @@
+import datetime
+with open('readme', 'a') as log:
+now = datetime.datetime.now()
+log.write("Checked system clock status at" + now.strftime("%Y-
+%m-%d %H:%M:%S") + "\n")
+Ctrl+X y [ENTER]
+mv script.py week3/script.py
+python script.py
+cat readme
+Crontab -e
+*/1 * * * * cd /home/user/Desktop/my_env/week3 && /usr/bin/python3
+script.py
+
